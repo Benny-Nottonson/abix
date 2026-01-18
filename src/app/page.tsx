@@ -1,6 +1,5 @@
-import Link from "next/link";
-
 import styles from "./page.module.css";
+import Navbar from "./components/Navbar";
 
 const founders = [
   {
@@ -16,11 +15,7 @@ const founders = [
 export default function Home() {
   return (
     <div className={styles.page}>
-      <nav className={styles.navbar}>
-        <Link href="/" className={styles.brand}>
-          ABIX
-        </Link>
-      </nav>
+      <Navbar />
       <main className={styles.main}>
         <div className={styles.founders}>
           {founders.map((founder) => (  

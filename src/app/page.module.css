@@ -4,31 +4,6 @@
   flex-direction: column;
 }
 
-.navbar {
-  width: 100%;
-  display: flex;
-  justify-content: flex-start;
-  padding: 24px 32px 0;
-}
-
-.brand {
-  font-size: 2.25rem;
-  font-weight: 600;
-  letter-spacing: 0.14em;
-  text-decoration: none;
-  color: var(--foreground);
-  font-family: var(--font-geist-sans), system-ui, -apple-system, sans-serif;
-  text-underline-offset: 10px;
-  text-decoration-thickness: 2px;
-  transition: letter-spacing 0.25s ease, transform 0.25s ease, text-decoration 0.25s ease;
-}
-
-.brand:hover {
-  letter-spacing: 0.18em;
-  transform: translateY(-2px);
-  text-decoration: underline;
-}
-
 .main {
   flex: 1;
   display: flex;
