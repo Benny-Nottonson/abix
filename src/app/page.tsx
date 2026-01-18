@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 import styles from "./page.module.css";
 
 const founders = [
@@ -6,16 +8,20 @@ const founders = [
     avatar: "/benjamin-avatar.jpg",
   },
   {
-    name: "Lucielle Abix",
-    avatar: "/lucielle-avatar.jpg",
+    name: "Luceille Abix",
+    avatar: "/luceille-avatar.jpg",
   },
 ];
 
 export default function Home() {
   return (
     <div className={styles.page}>
+      <nav className={styles.navbar}>
+        <Link href="/" className={styles.brand}>
+          ABIX
+        </Link>
+      </nav>
       <main className={styles.main}>
-        <h1 className={styles.title}>Abix</h1>
         <div className={styles.founders}>
           {founders.map((founder) => (  
             <div key={founder.name} className={styles.person}>
@@ -34,6 +40,6 @@ export default function Home() {
 }
 
 export const metadata = {
-  title: "Abix",
-  description: "Abix",
+  title: "ABIX",
+  description: "The official website of Abix",
 };
